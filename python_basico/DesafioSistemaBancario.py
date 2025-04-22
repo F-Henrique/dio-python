@@ -18,25 +18,23 @@ while True:
     
     operacaoBancaria = input(textoInicial)
     
-    if len(operacaoBancaria) > 1 or  isinstance(operacaoBancaria, (int, float)):
+    if len(operacaoBancaria) > 1 or isinstance(operacaoBancaria, (int, float)):
         print('erro')
     
     else:
+
         match operacaoBancaria.upper():
             
             case "D":
              
                 valorDeposito = float(input('Qual o valor a ser depositado? '))
                 
-                # operacoesB.append('Depos: R$' +str(valorDeposito))
-                operacoesB.append(f'Depos: R${valorDeposito:.2f}')
+                operacoesB.append(f'Depos: R$ {valorDeposito:.2f}')
 
-                            #
                 valorBanco= valorBanco + valorDeposito
                        
             case "S":
-                
-                
+                               
                
                 if totalSaques < MAXIMOSAQUES: 
                 
@@ -68,16 +66,17 @@ while True:
                     
             case "E":
                 print('')
-                print('-----------------')
+                print('====== EXTRATO ======')
                 
                 for operacao in operacoesB:
                     print(operacao)
-
-                print('-----------------')
+                    print('---------------------')
+                
+                print('=====================')
                 print(f'saldo atual de: R$ {valorBanco:.2f}')
     
             case "Q": break
             
             case _:
                 
-                print('deu ruim.')
+                print('Por favor, escolha uma das opções sinalizadas no menu inicial.')
