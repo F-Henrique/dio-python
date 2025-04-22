@@ -48,10 +48,7 @@ while True:
                         elif valorSaque <= limite:
                              
                              totalSaques = totalSaques + 1
-                            
-                            #  operacoesB.append('Saque: R$' +str(valorSaque))
                              operacoesB.append(f'Saque: R$ {valorSaque:.2f}')
-                            #  print(f'Saque :R$ {valorSaque:.2f}')
                              valorBanco = valorBanco - valorSaque
                              
                         else:
@@ -75,8 +72,8 @@ while True:
                 print('=====================')
                 print(f'saldo atual de: R$ {valorBanco:.2f}')
     
-            case "Q": break
+            case "Q": 
+                break
             
-            case _:
-                
+            case _:                
                 print('Por favor, escolha uma das opções sinalizadas no menu inicial.')
