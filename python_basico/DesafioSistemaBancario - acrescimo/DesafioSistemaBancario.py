@@ -494,7 +494,7 @@ usuarios = [
     {"id": 3,"cpf": "10345678988","nome": "nomeUsuario3","senhaUsuario": "qwe3", "data_nasc": "14-07-1990",
      "endereço": "enderecoUsuario","contas":['0001310345678988','00011010345678988']}
 ]
-
+ 
 textoInicial="""
     Escreva a operacao que deseja realizar:                             
       [Alt]erar dados de usuário
