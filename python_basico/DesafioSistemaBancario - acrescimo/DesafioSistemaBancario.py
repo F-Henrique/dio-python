@@ -480,20 +480,23 @@ totalSaques=0
 limite=500
 MAXIMOSAQUES=3
 contasCriadas = []
-contasCriadas = [{'conta':'0001112345678988','senhaconta':'asdf1', 'saldo':0, 'operacoes':[]},
-                 {'conta':'0001202345678988','senhaconta':'asdf2', 'saldo':0, 'operacoes':[]},
-                 {'conta':'0001310345678988','senhaconta':'asdf3', 'saldo':0, 'operacoes':[]},
-                 {'conta':'00011010345678988','senhaconta':'asdf10', 'saldo':0, 'operacoes':[]}
-                 ]
 usuarios = []
-usuarios = [
-    {"id": 1,"cpf": "12345678988","nome": "nomeUsuario1","senhaUsuario": "qwe1", "data_nasc": "12-01-1992",
-     "endereço": "enderecoUsuario","contas":['0001112345678988']},
-    {"id": 2,"cpf": "02345678988","nome": "nomeUsuario2","senhaUsuario": "qwe2", "data_nasc": "25-11-2000",
-     "endereço": "enderecoUsuario","contas":['0001202345678988']},
-    {"id": 3,"cpf": "10345678988","nome": "nomeUsuario3","senhaUsuario": "qwe3", "data_nasc": "14-07-1990",
-     "endereço": "enderecoUsuario","contas":['0001310345678988','00011010345678988']}
-]
+
+# para testar sem precisar ficar criando dados novos
+# contasCriadas = [{'conta':'0001112345678988','senhaconta':'asdf1', 'saldo':0, 'operacoes':[]},
+#                  {'conta':'0001202345678988','senhaconta':'asdf2', 'saldo':0, 'operacoes':[]},
+#                  {'conta':'0001310345678988','senhaconta':'asdf3', 'saldo':0, 'operacoes':[]},
+#                  {'conta':'00011010345678988','senhaconta':'asdf10', 'saldo':0, 'operacoes':[]}
+#                  ]
+
+# usuarios = [
+#     {"id": 1,"cpf": "12345678988","nome": "nomeUsuario1","senhaUsuario": "qwe1", "data_nasc": "12-01-1992",
+#      "endereço": "enderecoUsuario","contas":['0001112345678988']},
+#     {"id": 2,"cpf": "02345678988","nome": "nomeUsuario2","senhaUsuario": "qwe2", "data_nasc": "25-11-2000",
+#      "endereço": "enderecoUsuario","contas":['0001202345678988']},
+#     {"id": 3,"cpf": "10345678988","nome": "nomeUsuario3","senhaUsuario": "qwe3", "data_nasc": "14-07-1990",
+#      "endereço": "enderecoUsuario","contas":['0001310345678988','00011010345678988']}
+# ]
  
 textoInicial="""
     Escreva a operacao que deseja realizar:                             
